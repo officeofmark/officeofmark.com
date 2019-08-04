@@ -36,12 +36,12 @@ a {
 
 .contact-button {
   background: #fff;
-  padding: 10rem;
-  font-size: 8rem;
+  padding: 4vw;
+  font-size: 4vw;
   font-weight: 600;
   box-shadow: 2rem 2rem 0rem rgba(0, 0, 0, 0.2);
   text-align: center;
-  transition: .2s ease;
+  transition: .1s ease;
   color: #333FAE;
   display: block;
   position: relative;
