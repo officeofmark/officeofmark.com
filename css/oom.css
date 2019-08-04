@@ -1,0 +1,101 @@
+html {
+  background: #333FAE;
+}
+body {
+  color: #fff;
+}
+
+a {
+  color: #fff;
+}
+
+.oom {font-weight:700;}
+
+.intro {
+  margin-top: 15%;
+}
+.intro h1 {font-weight: 400;}
+.lists {
+  margin-top: 15%;
+}
+  .lists ul li {
+    list-style: none;
+  }
+.lists li:first-child {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  opacity: .5;
+}
+  /* big ass button */
+#contact {
+  background: #1C2895;
+  height: auto;
+  padding: 12rem;
+}
+
+.contact-button {
+  background: #fff;
+  padding: 10rem;
+  font-size: 8rem;
+  font-weight: 600;
+  box-shadow: 2rem 2rem 0rem rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: .2s ease;
+  color: #333FAE;
+  display: block;
+  position: relative;
+  top: -1rem;
+  left: -1rem;
+}
+
+.contact-button:hover{
+  top: 0rem;
+  left: 0rem;
+  box-shadow: 1rem 1rem 0rem rgba(0, 0, 0, 0.2)
+}
+
+a.contact-button {
+  text-decoration: none;
+}
+a.contact-button:hover {
+  color: #1C2895;
+  background: #fff;
+}
+
+  /* form */
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(28, 40, 149, 1);
+    transition: opacity 200ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+  .popup {
+  padding: 20px;
+  margin-top: 40px;
+  position: relative;
+  display: block;
+  height: 800px;
+}
+.close {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 20px;
+  right: 20px;
+  opacity: 0.8;
+  transition: all 200ms;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #666;
+}
