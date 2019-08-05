@@ -17,6 +17,8 @@ a {
 .intro h1 {font-weight: 400;}
 .lists {
   margin-top: 15%;
+  padding: 4rem 0 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
   .lists ul li {
     list-style: none;
@@ -27,6 +29,8 @@ a {
   letter-spacing: .1em;
   opacity: .5;
 }
+
+
   /* big ass button */
 #contact {
   background: #1C2895;

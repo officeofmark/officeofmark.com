@@ -170,18 +170,18 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  display: inline-block;
+  display: block;
   height: 44px;
   padding: 0 30px;
-  color: #555;
+  color: #333FAE;
   text-align: center;
   font-size: 15px;
   font-weight: 600;
   line-height: 44px;
   text-decoration: none;
   white-space: nowrap;
-  background-color: transparent;
-  border: 1px solid #bbb;
+  background-color: #fff;
+  border: 0px solid rgba(255, 255, 255, 0.1);
   cursor: pointer;
   box-sizing: border-box;
   box-shadow: .4rem .4rem rgba(0, 0, 0, 0.2);}
@@ -195,8 +195,8 @@ button:focus,
 input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
+  color: #333FAE;
+  border-color: #fff;
   outline: 0; }
 .button.button-primary,
 button.button-primary,
@@ -230,13 +230,17 @@ input[type="url"],
 input[type="password"],
 textarea,
 select {
+  color: #fff;
   height: 38px;
   padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
-  background-color: #fff;
-  border: 1px solid #D1D1D1;
-  border-radius: 4px;
+  background-color: #333FAE;
+  border: 0px;
+  border-radius: 0px;
   box-shadow: none;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+}
 /* Removes awkward default styles on some inputs for iOS */
 input[type="email"],
 input[type="number"],
@@ -262,7 +266,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-  border: 1px solid #33C3F0;
+  border-bottom: 1px solid #fff;
   outline: 0; }
 label,
 legend {
@@ -279,7 +283,18 @@ label > .label-body {
   display: inline-block;
   margin-left: .5rem;
   font-weight: normal; }
-
+  ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.1);
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.1);
+  }
+  :-ms-input-placeholder { /* IE 10+ */
+    color: rgba(255, 255, 255, 0.1);
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: rgba(255, 255, 255, 0.1);
+  }
 
 /* Lists
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
