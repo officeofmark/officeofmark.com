@@ -12,15 +12,14 @@ a {
 .oom {font-weight:700;}
 
 .intro {
-  margin-top: 15%;
+  margin: 15% 0 15% 0;
 }
 .intro h1 {font-weight: 400;}
-.lists {
-  margin-top: 15%;
+.lists, .weblinks {
   padding: 4rem 0 4rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
-  .lists ul li {
+  .lists ul li, .weblinks ul li {
     list-style: none;
   }
 .lists li:first-child {
